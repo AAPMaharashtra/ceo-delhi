@@ -93,7 +93,7 @@ with open("delhi-"+str(listno)+".csv", "a") as f:
 		    writer.writerows([['Assembly Constituency', 'Serial No', 'Date of Receipt', 'Name of claimant', 'Relation Type', 'Name of relationship', 'Address', 'Status of Application']])
 		    print 'Wrote headers to file'
 
-for x in xrange (200, ) :
+for x in xrange (1, 500) :
 	t = threading.Thread(target=search, args =(listno, x))
 	t.daemon = True
 	t.start()
