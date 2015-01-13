@@ -5,6 +5,7 @@ import sys
 from datetime import datetime
 from bs4 import BeautifulSoup
 import unicodecsv
+import threading
 
 startTime 	= datetime.now()
 USER_AGENT 	= 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.9; rv:26.0) Gecko/20100101 Firefox/26.0'
